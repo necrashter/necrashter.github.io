@@ -269,6 +269,10 @@ For example, the following flag features a normal map:
     <source src="/assets/469/hw1/thickflag.webm" type="video/webm">
 </video>
 
+And here's the video I submitted to the flag competition:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KTGM0LjEWdE" frameborder="0" allowfullscreen></iframe>
+
 
 # Failed Experimentations
 
