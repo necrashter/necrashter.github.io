@@ -7,6 +7,18 @@ categories: ceng469 assignment
 
 In this post, I will explain my experience with the first assignment of CENG 469 Computer Graphics 2 course, in which we are asked to implement a waving flag with Bezier surfaces.
 
+# Devlog Video
+
+I was recording a devlog while doing the project.
+However, as the deadline closed in, I focused on the project and couldn't finish the devlog.
+
+Here's the incomplete devlog, starts off serious but goes downhill from there:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DYEmwpx4gO4" frameborder="0" allowfullscreen></iframe>
+
+The video tells more about the initial stages of the project.
+
+
 # Getting Started
 
 Thanks to our professors and teaching assistants, we were given a sample OpenGL program to get started.
