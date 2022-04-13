@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Creating a Flag using Bezier Surfaces"
+date:   2022-04-13 13:05:19 +0300
+categories: ceng469 assignment
+---
+
+In this post, I will explain my experience with the first assignment of CENG 469 Computer Graphics 2 course, in which we are asked to implement a waving flag with Bezier surfaces.
+
+# Getting Started
+
+Thanks to our professors and teaching assistants, we were given a sample OpenGL program to get started.
+This program handles all of the essential functions of a basic OpenGL program, such as creating a window, reading and compiling shaders, etc.
+It also features more advanced stuff, e.g., an `.obj` parser.
+
+I started by removing the unnecessary parts.
+Since we will generate all the geometry in run-time in this assignment, I removed the `.obj` parser.
+Then, I removed the custom struct definitions and opted to use the alternatived presented in `glm` library.
+`glm` library is comprehensive, and it can handle all fundamental linear algebra operations.
+Therefore, I didn't want to reinvent the wheel.
+
+
+# Bezier Surface
+
+Implementing a bezier surface was much easier than I thought.
+Essentially, all you have to do is
+1. Create 3 4x4 matrices for x, y, and z. These matrices will hold the positions of the control points. We will call these matrices $Z$, or use $Z_x$, $Z_y$, $Z_z$ to refer to particular one.
+2. Create the constant $M_B$ basis matrix.
+	- I ran into a problem during this step: `glm` stored the matrices in column-wise order. Consequently, if you write the values in the matrix as you see them into a `glm::mat4`, you will actually get the transpose of that matrix.
+3. Given $s$ and $t$ parameters, compute $S = [s^3, s^2, s, 1]$ and $T = [t^3, t^2, t, 1]$.
+4. Find the point $Q(s,t)$ by calculating $S M_B Z M_B^T T^T$ for all $Z$.
