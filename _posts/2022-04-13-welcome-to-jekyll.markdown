@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Welcome to My Blog!"
+title:  "Site is Born!"
 date:   2022-04-13 12:51:12 +0300
-categories: jekyll update
+categories: site
 ---
+This post was automatically created when the site is first built.
+
 I’ll find this post in my `_posts` directory. I edit it and re-build the site to see my changes. I can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates my site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:

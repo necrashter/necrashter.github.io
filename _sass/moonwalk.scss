@@ -22,6 +22,7 @@ pre, code {
 
 // Header, feature and footer
 .header,
+.interer,
 .footer {
 	background: var(--bg-secondary);
 	width: 100%;
@@ -70,6 +71,13 @@ pre, code {
 	align-items: flex-end;
 	justify-content: flex-end;
 	overflow: hidden;
+}
+
+.interer {
+	.feature {
+		padding-top: .4rem;
+		margin-top: 1.6rem;
+	}
 }
 
 .feature {
@@ -131,7 +139,7 @@ li { margin: 0.4em 0; }
 .w {
 	max-width: 720px;
 	margin: 0 auto;
-	padding: 0em 2em;
+	padding: 1em 2em;
 	flex-grow: 1;
 }
 
@@ -162,8 +170,8 @@ img {
 	margin: 0 auto;
 }
 html {
-	--bg: #FFF;
-	--bg-secondary: #d7ecf2;
+	--bg: #d7ecf2;
+	--bg-secondary: #95aeb5;
 	--headings: #000;
 	--text: #333;
 	--links: blue;

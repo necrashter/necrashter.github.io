@@ -4,6 +4,6 @@ layout: default
 
 <h1 class="post-title">{{ page.title }}</h1>
 
-{% include date_and_social_share.html %}
+{% include post-meta.html %}
 
-{{ content }}
+{{ content | replace: "<!--CLOSEW-->", "</div>" | replace: "<!--OPENW-->", "<div class='w'>" }}

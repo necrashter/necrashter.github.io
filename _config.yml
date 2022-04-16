@@ -20,6 +20,7 @@
 
 title: "\"Wonderful\" Blog #5341134515"
 email: iiilker99@gmail.com
+author: İlker Işık
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my world.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -38,8 +39,6 @@ theme_config:
   back_home_text: "home.." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: true # show blog description
-  show_navbar: true # show horizontal navbar
-  show_footer: true # show footer links in home page,add in _data/home.yml
   show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: false # show projects as cards, add in _data/home.yml
@@ -58,9 +57,13 @@ highlighter: rouge
 sass:
   style: :compressed
 
+# Permalink style
+permalink: /:year/:month/:day/:title/
+
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.

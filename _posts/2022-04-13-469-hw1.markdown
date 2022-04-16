@@ -2,6 +2,9 @@
 layout: post
 title:  "Creating a Flag using Bezier Surfaces"
 date:   2022-04-13 13:05:19 +0300
+permalink: /ceng469/hw1/
+redirect_from:
+- /ceng469/assignment/2022/04/13/469-hw1.html
 categories:
 - ceng469
 - assignment
@@ -16,7 +19,7 @@ In this post, I will explain my experience with the first assignment of CENG 469
 I was recording a devlog while doing the project.
 However, as the deadline closed in, I focused on the project and couldn't finish the devlog.
 
-[Here's the incomplete devlog](https://www.youtube.com/watch?v=DYEmwpx4gO4) (for some reason Github Pages embeds the wrong video), starts off serious but goes downhill from there:
+[Here's the incomplete devlog](https://www.youtube.com/watch?v=DYEmwpx4gO4), starts off serious but goes downhill from there:
 
 {% include youtube.html id="DYEmwpx4gO4" %}
 

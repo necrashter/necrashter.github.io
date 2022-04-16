@@ -8,6 +8,7 @@ imgtitle:
 ---
 
 The theme is based on [Moonlight](https://github.com/abhinavs/moonwalk), but heavily modified.
+Inspired by [Alembic](https://github.com/daviddarnes/alembic) theme.
 
 You can find the source code for Jekyll at GitHub:
 [jekyll][jekyll-organization] /
