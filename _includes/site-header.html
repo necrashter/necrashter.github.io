@@ -1,0 +1,10 @@
+<header class="header">
+	<div class="container">
+		<p>{{ site.title }}</p>
+
+		{% include nav-header.html collection=site.data.home.navbar_entries %}
+	</div>
+
+	{% include site-feature.html %}
+
+</header>

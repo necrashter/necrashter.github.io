@@ -2,7 +2,11 @@
 layout: post
 title:  "Creating a Flag using Bezier Surfaces"
 date:   2022-04-13 13:05:19 +0300
-categories: ceng469 assignment
+categories:
+- ceng469
+- assignment
+imgtitle:
+  url: "/assets/469/hw1/bg.webp"
 ---
 
 In this post, I will explain my experience with the first assignment of CENG 469 Computer Graphics 2 course, in which we are asked to implement a waving flag with Bezier surfaces.
@@ -14,7 +18,7 @@ However, as the deadline closed in, I focused on the project and couldn't finish
 
 [Here's the incomplete devlog](https://www.youtube.com/watch?v=DYEmwpx4gO4) (for some reason Github Pages embeds the wrong video), starts off serious but goes downhill from there:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DYEmwpx4gO4" frameborder="0" allowfullscreen></iframe>
+{% include youtube.html id="DYEmwpx4gO4" %}
 
 The video tells more about the initial stages of the project.
 
@@ -283,7 +287,7 @@ For example, the following flag features a normal map:
 
 And here's the video I submitted to the flag competition:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KTGM0LjEWdE" frameborder="0" allowfullscreen></iframe>
+{% include youtube.html id="KTGM0LjEWdE" %}
 
 
 # Failed Experimentations

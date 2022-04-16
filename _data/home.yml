@@ -1,9 +1,19 @@
 navbar_entries:
-  - title: about
+  - title: Home
+    url: /
+
+  - title: About
     url: about
 
-  - title: blog
+  - title: Blog
     url: blog
+
+footer_entries:
+  - title: Github
+    url: https://github.com/necrashter
+
+  - title: Feed
+    url: feed.xml
 
 project_entries:
   - title: Project 1
@@ -49,13 +59,6 @@ old_project_entries:
   - title: Humangous
     url: https://www.humangous.co
     desc: The better people know you, the better they collaborate
-
-footer_entries:
-  - title: github
-    url: https://github.com/necrashter
-
-  - title: feed
-    url: feed.xml
 
 misc_entries:
   - title: this is an example vertical list

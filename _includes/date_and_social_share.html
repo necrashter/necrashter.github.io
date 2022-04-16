@@ -1,13 +1,17 @@
-<p class="post-date text-bold text-upcase">
-  {% if page.author %}
-    <span class="text-bold">{{ page.author }}</span> / 
-  {% endif %}
-  {% if page.date %}
-    <span>{{ page.date | date: "%B %Y"}}</span>
-  {% endif %}
-</p>
+<div class="post-date text-bold text-upcase">
+	<!-- {% if page.author %} -->
+	<!--   <span class="text-bold">{{ page.author }}</span> / --> 
+	<!-- {% endif %} -->
+	{% if page.categories %}
+		<div class="tags">
+			<span>Tags:</span>
+				{% for category in page.categories %}
+					<a href="{{ site.baseurl }}/categories/#{{ category | downcase | slugify }}">{{ category }}</a>{% if forloop.last == false %},{% endif %}
+				{% endfor %}
+		</div>
+	{% endif %}
 
-<div class="soopr-btn"
-   data-twitter="SooprCo"
->
+	{% if page.date %}
+	<div>{{ page.date | date: "%Y-%m-%d %H:%M"}}</div>
+	{% endif %}
 </div>

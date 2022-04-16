@@ -1,0 +1,14 @@
+<ul class="nav-list">
+	{% for item in include.collection %}
+
+	{% if item.url contains '://' %}
+	{% assign url = item.url %}
+	{% else %}
+	{% assign url = item.url | relative_url %}
+	{% endif %}
+
+	<li class="{% if item.url == page.url %} current{% endif %}">
+		<a href="{{ url }}">{{ item.title }}</a>
+	</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,14 @@
+{% assign imgtitle = page.imgtitle %}
+{% if page.collectionpage %}
+  {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+  {% assign imgtitle = collectiondata.imgtitle %}
+{% endif %}
+
+{% if imgtitle %}
+<div class="feature"{% if imgtitle.url %} style="background-image: url({{ imgtitle.url }})"{% endif %}>
+	<div class="container {% if imgtitle.class %} {{ imgtitle.class }} {% endif %}">
+		{{ imgtitle.text | markdownify }}
+	</div>
+</div>
+{% endif %}
+
