@@ -111,7 +111,7 @@ Since this operation is performed at CPU (cannot access neighboring vertices in 
 
 # Multiple Patches
 
-A Bezier surface maps two parameters $$s \in [0, 1]$$ and $$t \in [0, 1]$$ to $$\mathbb{R}^3$.
+A Bezier surface maps two parameters $$s \in [0, 1]$$ and $$t \in [0, 1]$$ to $$\mathbb{R}^3$$.
 In order to sample from multiple patches, we need to devise a partial function.
 
 Here's an example.

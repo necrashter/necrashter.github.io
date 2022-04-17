@@ -317,3 +317,15 @@ p code, li code {
 	}
 }
 
+
+// Fix katex in mobile screens for responsive design
+// Don't overflow the wrapper div, overflow the element itself
+// Scrollbar appears if the eqn. is too long for the screen
+.katex-display {
+	// max-width: 100%; // doesn't work unfortunately
+	// This one doesn't work in all cases
+	max-width: calc(100vw - 4em);
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 0.5em 0;
+}
