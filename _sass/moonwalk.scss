@@ -53,13 +53,19 @@ pre, code {
 			padding: 0;
 			overflow: hidden;
 			li {
-				padding: 0 .5em;
+				padding: 0 .25em;
 				display: inline-block;
 				line-height: 1;
 			}
 			a {
-				padding: .2rem;
+				background: #3e7b9d;
+				color: white;
+				padding: 0.5rem 1rem;
+				border-radius: 1rem;
 				text-decoration: none;
+			}
+			a:hover {
+				background: #4e8bad;
 			}
 		}
 	}
@@ -177,8 +183,8 @@ img {
 	margin: 0 auto;
 }
 html {
-	--bg: #d7ecf2;
-	--bg-secondary: #95aeb5;
+	--bg: #f1f9fb;
+	--bg-secondary: #b2c8ce;
 	--headings: #000;
 	--text: #333;
 	--links: blue;
