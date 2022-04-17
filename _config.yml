@@ -29,9 +29,6 @@ url: https://necrashter.github.io
 # twitter_username: jekyllrb
 github_username:  necrashter
 
-# Build settings
-# remote_theme: abhinavs/moonwalk
-
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
@@ -53,6 +50,9 @@ theme_config:
     title_old_projects: Old Projects
 
 highlighter: rouge
+
+kramdown:
+  math_engine: katex
 
 sass:
   style: :compressed
