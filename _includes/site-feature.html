@@ -5,8 +5,8 @@
 {% endif %}
 
 {% if imgtitle %}
-<div class="feature"{% if imgtitle.url %} style="background-image: url({{ imgtitle.url }})"{% endif %}>
-	<div class="container {% if imgtitle.class %} {{ imgtitle.class }} {% endif %}">
+<div class="feature {% if imgtitle.class %} {{ imgtitle.class }} {% endif %}"{% if imgtitle.url %} style="background-image: url({{ imgtitle.url }})"{% endif %}>
+	<div class="container">
 		{{ imgtitle.text | markdownify }}
 	</div>
 </div>

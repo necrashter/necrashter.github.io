@@ -87,9 +87,6 @@ pre, code {
 	background: var(--bg);
 	background-size: cover;
 	background-position: center;
-	.container.slim {
-		min-height: 12vh;
-	}
 	.container {
 		min-height: 35vh;
 		max-width: 60%;
@@ -100,6 +97,16 @@ pre, code {
 			color: white;
 			text-shadow: 0 0 1em black, 0 0 1em black;
 		}
+	}
+}
+
+.feature.parallax {
+	background-attachment: fixed;
+}
+
+.feature.slim {
+	.container {
+		min-height: 12vh;
 	}
 }
 

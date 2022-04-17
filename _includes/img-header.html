@@ -1,7 +1,7 @@
 <!--CLOSEW-->
 <header class="interer">
-	<div class="feature"{% if include.url %} style="background-image: url({{ include.url }})"{% endif %}>
-		<div class="container {% if include.class %} {{ include.class }} {% endif %}">
+	<div class="feature {% if include.class %} {{ include.class }} {% endif %}"{% if include.url %} style="background-image: url({{ include.url }})"{% endif %}>
+		<div class="container">
 			{{ include.text | markdownify }}
 		</div>
 	</div>
