@@ -34,7 +34,7 @@ It also features more advanced stuff, e.g., an `.obj` parser.
 
 I started by removing the unnecessary parts.
 Since we will generate all the geometry in run-time in this assignment, I removed the `.obj` parser.
-Then, I removed the custom struct definitions and opted to use the alternatived presented in `glm` library.
+Then, I removed the custom struct definitions and opted to use the alternatives presented in `glm` library.
 `glm` library is comprehensive, and it can handle all fundamental linear algebra operations.
 Therefore, I didn't want to reinvent the wheel.
 

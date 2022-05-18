@@ -304,6 +304,14 @@ p code, li code {
 .post-title {
 	margin-bottom: 0;
 }
+
+.post {
+	padding: 1em 0;
+	.post-title {
+		margin: 0;
+	}
+}
+
 .project-title {
 	margin-bottom: 0.8rem;
 }
