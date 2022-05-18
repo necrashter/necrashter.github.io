@@ -67,8 +67,6 @@ position += velocity * delta_time;
 When no key is pressed, the camera moves in opposition to its velocity, thereby slowing down and eventually stopping.
 I adjusted the acceleration and deacceleration values so that the movement is both smooth and snappy.
 
-# TODO VIDEO MIGHT BE ADDED?
-
 
 # Parsing Models
 
