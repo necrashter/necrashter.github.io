@@ -350,3 +350,8 @@ p code, li code {
 	overflow-y: hidden;
 	padding: 0.5em 0;
 }
+
+
+.highlighter-rouge {
+	max-width: calc(100vw - 4em);
+}
