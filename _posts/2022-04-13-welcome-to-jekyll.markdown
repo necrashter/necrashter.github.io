@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Site is Born!"
 date:   2022-04-13 12:51:12 +0300
 categories: site

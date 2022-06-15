@@ -1,15 +1,20 @@
 ---
-layout: post
 title:  "Environment Mapping using Cubemaps"
 date:   2022-05-18 11:06:15 +0300
 permalink: /ceng469/hw2/
 redirect_from:
 - /ceng469/assignment/2022/05/18/469-hw2.html
-categories:
+tags:
 - ceng469
 - assignment
-imgtitle:
-  url: "/assets/469/hw2/bg.webp"
+categories:
+- graphics
+header:
+  image: "/assets/469/hw2/bg.webp"
+  full_image: false
+toc: true
+sidebar:
+  nav: "ceng469"
 ---
 
 This post will describe how I completed the second assignment of CENG 469 Computer Graphics 2 course.
@@ -179,7 +184,7 @@ On the other hand, reflections on a sphere look great:
     <source src="/assets/469/hw2/sphere.webm" type="video/webm">
 </video>
 
-### Improving OBJ Parser
+# Improving OBJ Parser
 
 I noticed that the `.obj` parser was unable to read models exported from Blender.
 Because it requires the vertex, normal, and texture indices of a triangle to be the same at a given corner.
@@ -265,6 +270,7 @@ Max FPS is 60 due to v-sync.
 **NOTE:** These values cannot be configured at runtime.
 You need to modify the program to test these.
 Change the starting scene in `main.cpp` and uncomment the for loop in `render_envmaps` method definition in `rendering.h`.
+{: .notice--warning}
 
 
 # Animation

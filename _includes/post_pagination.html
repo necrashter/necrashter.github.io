@@ -1,0 +1,39 @@
+
+{% if page.sidebar.nav %}
+{% assign prev = false %}
+{% assign next = false %}
+{% assign navigation = site.data.navigation[page.sidebar.nav] %}
+{% for nav in navigation %}
+{% for child in nav.children %}
+  {% if page.url == child.url %}
+  	{% assign pOffset = forloop.index0 | minus: 1 %}
+  	{% assign nOffset = pOffset | plus: 2 %}
+  	{% if forloop.first == false %}
+  	  {% assign prev = nav.children[pOffset] %}
+  	{% endif %}
+  	{% if forloop.last == false %}
+  	  {% assign next = nav.children[nOffset] %}
+  	{% endif %}
+  	{% break %}
+  {% endif %}
+{% endfor %}
+{% endfor %}
+{% else %}
+{% assign prev = page.previous %}
+{% assign next = page.next %}
+{% endif %}
+
+{% if prev or next %}
+  <nav class="pagination">
+    {% if prev %}
+      <a href="{{ prev.url | relative_url }}" class="pagination--pager" title="{{ prev.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    {% endif %}
+    {% if next %}
+      <a href="{{ next.url | relative_url }}" class="pagination--pager" title="{{ next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    {% endif %}
+  </nav>
+{% endif %}

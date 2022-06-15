@@ -3,7 +3,7 @@
     {% for post in site.posts %}
       <li class="post-list-item">
         <span class="home-date">
-          {{ post.date | date: site.theme_config.date_format }} »
+          {{ post.date | date: "%Y-%m-%d" }} »
         </span>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>

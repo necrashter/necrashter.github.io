@@ -1,0 +1,18 @@
+# main links
+main:
+  - title: "Posts"
+    url: /year-archive/
+  - title: "Categories"
+    url: /categories/
+  - title: "Sitemap"
+    url: /sitemap/
+
+ceng469:
+  - title: "CENG 469 Advanced Graphics"
+    children:
+      - title: "HW1 - Bezier Flag"
+        url: /ceng469/hw1/
+      - title: "HW2 - Dynamic Cubemap"
+        url: /ceng469/hw2/
+      - title: "HW3 - Perlin Terrain"
+        url: /ceng469/hw3/
