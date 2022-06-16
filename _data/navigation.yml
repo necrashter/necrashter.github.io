@@ -16,3 +16,7 @@ ceng469:
         url: /ceng469/hw2/
       - title: "HW3 - Perlin Terrain"
         url: /ceng469/hw3/
+  - title: "CENG 469 Project"
+    children:
+      - title: "Vulkan Compute Shaders Intro"
+        url: /ceng469/project/compute-shaders-intro
