@@ -20,3 +20,5 @@ ceng469:
     children:
       - title: "Vulkan Compute Shaders Intro"
         url: /ceng469/project/compute-shaders-intro
+      - title: "Final Project"
+        url: /ceng469/project/final
