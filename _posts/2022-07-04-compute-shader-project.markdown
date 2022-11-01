@@ -15,6 +15,11 @@ sidebar:
 excerpt: "Demonstration of my final project for CENG 469 alongside some technical information."
 ---
 
+**Update 2022-11-01:**
+The code of this project has been released at [this Github Repository](https://github.com/necrashter/vulkanized-compute-showdown).
+Pre-built Linux binary is also available [here](https://github.com/necrashter/vulkanized-compute-showdown/releases/tag/v0.1.0) with required assets.
+{: .notice--warning}
+
 As explained in [the previous post](/ceng469/project/compute-shaders-intro),
 I chose compute shaders as my final project topic for CENG 469 Advanced Graphics Course.
 In this post, I will showcase what I have developed so far.
