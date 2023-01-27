@@ -17,6 +17,13 @@ Spruce Deforestation is an FPS game I made a while back for the 23rd libGDX jam,
 You can play the game on this site [using this link](/spruce-deforestation/play).
 The web build is also available on [the game's itch.io page](https://necrashter.itch.io/spruce-deforestation), where you can find the desktop builds as well.
 
+You need to press ESC two times if you want to pause the game in browser.
+{: .notice--warning}
+
+Some gameplay tips:
+- Moving sideways relative to the enemy's facing direction will make them less accurate.
+- If you die, you will have a chance to restart the level with easier difficulty. In particular, you max health will be increased.
+
 Furthermore, the game is now open-source and the models are freely available for everyone:
 - [GitHub Repository](https://github.com/necrashter/spruce-deforestation/)
   - You can also build the game for Android from source code. Touchscreen controls are supported on mobile.
