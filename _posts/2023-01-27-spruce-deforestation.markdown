@@ -12,9 +12,10 @@ header:
 
 Spruce Deforestation is an FPS game I made a while back for the 23rd libGDX jam, the theme of which was "Dystopian Christmas".
 
-# [Play the Game on itch.io](https://necrashter.itch.io/spruce-deforestation)
+# [Play the Game Now](/spruce-deforestation/play)
 
-The web build is available on [the game's itch.io page](https://necrashter.itch.io/spruce-deforestation), as well as the desktop builds.
+You can play the game on this site [using this link](/spruce-deforestation/play).
+The web build is also available on [the game's itch.io page](https://necrashter.itch.io/spruce-deforestation), where you can find the desktop builds as well.
 
 Furthermore, the game is now open-source and the models are freely available for everyone:
 - [GitHub Repository](https://github.com/necrashter/spruce-deforestation/)
