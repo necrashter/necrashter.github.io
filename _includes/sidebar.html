@@ -1,12 +1,5 @@
-{% if page.author_profile or layout.author_profile or page.sidebar %}
+{% if page.author_profile or layout.author_profile or page.sidebar or page.toc %}
   <div class="sidebar sticky">
-
-  {% if false %}
-	<nav class="toc">
-	  <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-	  {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-	</nav>
-  {% endif %}
 
   {% if page.sidebar %}
     {% for s in page.sidebar %}
@@ -21,6 +14,12 @@
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
+  {% elsif page.toc %}
+	<nav class="toc">
+	  <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+	  {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+	</nav>
   {% endif %}
+
   </div>
 {% endif %}
