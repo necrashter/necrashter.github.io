@@ -46,11 +46,13 @@
         {% endfor %}
       {% endif %}
     </div>
+  {% elsif page.header.iframe %}
+    <iframe style="width: 100%; height: 720px; border: 0;" src="{{ page.header.iframe }}"></iframe>
   {% else %}
     {% if page.header.full_image %}
       <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image"/>
     {% else %}
-	  <div style="background-image: url({{ page.header.image | relative_url }})" class="page__hero-imagediv"></div>
+      <div style="background-image: url({{ page.header.image | relative_url }})" class="page__hero-imagediv"></div>
     {% endif %}
   {% endif %}
   {% if page.header.title %}
