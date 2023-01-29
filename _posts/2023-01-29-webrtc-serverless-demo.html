@@ -126,7 +126,29 @@ if (navigator.webkitGetUserMedia) {
   RTCPeerConnection = webkitRTCPeerConnection
 }
 
-var cfg = {'iceServers': [{'urls': "stun:stun.gmx.net"}]},
+var cfg = {'iceServers': [
+  // {
+  //   'urls': "stun:stun.gmx.net",
+  // },
+  {
+    urls: "stun:relay.metered.ca:80",
+  },
+  {
+    urls: "turn:relay.metered.ca:80",
+    username: "c6ef3baeb85fe815570485bc",
+    credential: "BQd4sgV0Kxx1Gj40",
+  },
+  {
+    urls: "turn:relay.metered.ca:443",
+    username: "c6ef3baeb85fe815570485bc",
+    credential: "BQd4sgV0Kxx1Gj40",
+  },
+  {
+    urls: "turn:relay.metered.ca:443?transport=tcp",
+    username: "c6ef3baeb85fe815570485bc",
+    credential: "BQd4sgV0Kxx1Gj40",
+  },
+]},
 con = { 'optional': [{'DtlsSrtpKeyAgreement': true}] }
 
 var pc1 = new RTCPeerConnection(cfg, con), dc1 = null, tn1 = null, activedc, pc1icedone = false;
