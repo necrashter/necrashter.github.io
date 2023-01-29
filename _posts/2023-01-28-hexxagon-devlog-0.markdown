@@ -72,6 +72,24 @@ I don't think it's worth switching to arrays.
 
 Currently I'm using the `HashMap` implementation in Rust standard library, but I will change it to `hashbrown`.
 
+## Move Generation
+
+Each move is represented as a pair of axial coordinates.
+The first one denotes the location of the piece which performs the move, and the second one denotes the empty target tile.
+For each piece, it's straightforward to generate all possible moves by iterating the hexagons on the rings 1 and 2, and checking whether they are empty.
+
+This approach works great for representing the possible moves to the player in the UI.
+However, for AI, it's not optimal.
+Two neighboring hexagons share 2 neighbors, to which both of them can clone a piece.
+See the figure below.
+
+![Screenshot](/assets/hexxagon/same-cloning.webp)
+<center><i>You can choose either the top or the bottom piece to clone a new piece to the green tiles.</i></center>
+
+Note that the source piece from which we clone the new piece has no effect on the outcome as long as the target tile is the same.
+By eliminating duplicate moves that lead to the same successor board state, we can improve the performance of minimax search.
+Therefore, we don't have to explore both moves.
+
 ## Alpha-Beta Pruning
 
 [Alpha-Beta Pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) is treated like a must-have for a board game AI like this.
