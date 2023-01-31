@@ -33,6 +33,6 @@ httpd.serve_forever()
 In addition to this, **you need to make sure you connect to `localhost:8000`, not `0.0.0.0:8000`**.
 Otherwise it won't work.
 
-To check whether the current site is cross-origin isolated, enter the developer console (Ctrl+Shift+K) and type `crossOriginIsolated`. If it returns true, the site is cross-origin isolated.
+To check whether the current site is cross-origin isolated, enter the developer console (Ctrl+Shift+I) and type `crossOriginIsolated`. If it returns true, the site is cross-origin isolated.
 
 Based on [this script](https://fpira.com/blog/2020/05/python-http-server-with-cors).
