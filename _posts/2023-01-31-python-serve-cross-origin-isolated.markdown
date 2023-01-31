@@ -5,6 +5,7 @@ permalink: /python-cross-origin-isolated-server
 categories:
 - webdev
 toc: false
+excerpt: "Simple Python HTTP server for testing multi-threaded web applications."
 ---
 
 If you have ever tried to use `python3 -m http.server` to serve a multi-threaded web application, you may have noticed that browser doesn't allow your application to use `SharedArrayBuffer` (which is required for threading) because the webpage is not cross-origin isolated.
