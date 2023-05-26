@@ -4,8 +4,6 @@ main:
     url: /year-archive/
   - title: "Categories"
     url: /categories/
-  - title: "Sitemap"
-    url: /sitemap/
 
 ceng469:
   - title: "CENG 469 Advanced Graphics"
