@@ -1,0 +1,25 @@
+---
+title:  "Why use μ-law encoding?"
+date:   2023-06-08 13:02:00 +0300
+permalink: /why-mu-law
+excerpt: "The demonstration showing why you should use μ-law encoding instead of linear encoding while working with audio data in machine learning."
+---
+
+If you are working with audio data in machine learning and want the model to work with discrete inputs, the first idea that comes to mind is to use linear encoding: just map each floating point sample between -1 and +1 into an integer from 0 to 255. This is called linear encoding.
+
+However, there's a much better way to do this: [μ-law encoding](https://en.wikipedia.org/wiki/%CE%9C-law_algorithm).
+You can read more about the theoretical details in the given Wikipedia link, but I wasn't convinced without an empirical observation.
+
+So, here it is: same audio file encoded using linear and μ-law algorithm.
+It's the first 8 seconds of [this Youtube video](https://www.youtube.com/watch?v=EhO_MrRfftU) (which is called the [Youtube Mix dataset](https://huggingface.co/datasets/krandiash/youtubemix)) sampled at 16 kHz.
+
+<p>
+  <div class="audio-container">
+    <span>Linear</span> <audio class="sixty" controls><source src="/assets/mu-law/linear-noise.ogg" type="audio/ogg"></audio>
+  </div>
+  <div class="audio-container">
+    <span>μ-law</span> <audio class="sixty" controls><source src="/assets/mu-law/mu-law-noise.ogg" type="audio/ogg"></audio>
+  </div>
+</p>
+
+The noise in linear encoding is much more prominent compared to the μ-law version.
