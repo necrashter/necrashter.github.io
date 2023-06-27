@@ -2,6 +2,8 @@
 title:  "🍣 SaShiMi-796 Samples"
 date:   2023-06-08 14:11:00 +0300
 permalink: /sashimi-796
+categories:
+- machine-learning
 excerpt: "Showcase of samples from our 🍣 SaShiMi re-implementation, a deep-learning model for audio generation. Developed for METU CENG 796 Deep Generative Models course in Spring 2023."
 ---
 

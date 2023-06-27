@@ -2,6 +2,8 @@
 title:  "Tackling the Generative Learning Trilemma with Denoising Diffusion GANs"
 date:   2023-05-26 18:54:00 +0300
 permalink: /denoising-diffusion-gans-presentation
+categories:
+- machine-learning
 excerpt: "The presentation I made about this ICLR 2022 Spotlight paper."
 ---
 
