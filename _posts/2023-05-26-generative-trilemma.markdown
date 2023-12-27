@@ -4,7 +4,7 @@ date:   2023-05-26 18:54:00 +0300
 permalink: /denoising-diffusion-gans-presentation
 categories:
 - machine-learning
-excerpt: "The presentation I made about this ICLR 2022 Spotlight paper."
+excerpt: "A presentation I made about this ICLR 2022 Spotlight paper."
 ---
 
 I prepared a presentation about this ICLR 2022 Spotlight paper for [METU CENG 796 Deep Generative Models](https://user.ceng.metu.edu.tr/~gcinbis/courses/Spring23/CENG796/index.html) course in Spring 2023.

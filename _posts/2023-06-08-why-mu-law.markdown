@@ -2,7 +2,7 @@
 title:  "Why use μ-law encoding?"
 date:   2023-06-08 13:02:00 +0300
 permalink: /why-mu-law
-excerpt: "The demonstration showing why you should use μ-law encoding instead of linear encoding while working with audio data in machine learning."
+excerpt: "A demonstration that shows the advantages of using μ-law encoding instead of linear encoding when working with audio data in machine learning."
 ---
 
 If you are working with audio data in machine learning and want the model to work with discrete inputs, the first idea that comes to mind is to use linear encoding: just map each floating point sample between -1 and +1 into an integer from 0 to 255. This is called linear encoding.
