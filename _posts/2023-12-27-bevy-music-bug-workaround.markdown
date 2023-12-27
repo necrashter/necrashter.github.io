@@ -3,6 +3,8 @@ title:  "Workaround for the Choppy Music in Bevy Web Builds"
 date:   2023-12-27 17:29:00 +0300
 permalink: /bevy-choppy-music-workaround
 excerpt: "Using Web Audio API to fix the choppy audio problems on the web builds of Bevy game engine."
+categories:
+- gamedev
 ---
 
 If you have used the Bevy game engine to create a web game, you may have noticed the choppy audio bug, especially during performance-heavy parts. This happens because there is no separate thread for the audio (or any separate thread at all) on the web builds, at least for now (2023-12-27).

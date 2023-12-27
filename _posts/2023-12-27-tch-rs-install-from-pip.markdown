@@ -3,6 +3,8 @@ title:  "Tch-rs Installation from PyTorch"
 date:   2023-12-27 19:27:00 +0300
 permalink: /tch-rs-install-from-pytorch
 excerpt: "A short guide on how to install the Rust bindings of libtorch using a PyTorch installation."
+categories:
+- machine-learning
 ---
 
 Recently, I have been working on implementing deep reinforcement learning support for my [PowerRAFT](https://github.com/necrashter/PowerRAFT) project, which is written Rust.
