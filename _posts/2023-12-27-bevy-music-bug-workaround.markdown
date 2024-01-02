@@ -81,3 +81,7 @@ This code will play the same song in a loop, which was good enough for our game,
 
 A more rigorous solution would be to implement a new library that uses the Web Audio API as an audio backend on the web, but that would require a lot of work.
 Also, there doesn't seem to be enough interest in this topic in the Bevy community.
+
+**Update 2024-01-02:**
+gak shared an example of accessing the Web Audio API from Rust using `bindgen` and `websys` in [this GitHub Gist](https://gist.github.com/gak/1dcc8b8f53ca5e8980311da6c4a56e6e).
+{: .notice--info}
