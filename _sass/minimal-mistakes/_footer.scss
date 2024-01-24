@@ -30,7 +30,7 @@
   }
 
   a {
-    color: inherit;
+    color: $link-color;
     text-decoration: none;
 
     &:hover {
@@ -49,6 +49,9 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  a {
+    text-decoration: underline;
+  }
 }
 
 .page__footer-follow {
