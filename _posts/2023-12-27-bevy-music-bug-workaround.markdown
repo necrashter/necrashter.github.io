@@ -9,7 +9,7 @@ categories:
 
 If you have used the Bevy game engine to create a web game, you may have noticed the choppy audio bug, especially during performance-heavy parts. This happens because there is no separate thread for the audio (or any separate thread at all) on the web builds, at least for now (2023-12-27).
 
-In the recent [Bevy Jam #4](https://itch.io/jam/bevy-jam-4), I came up with a quick workaround for this problem.
+In the recent [Bevy Jam #4](/bevy-jam-4), I came up with a quick workaround for this problem.
 The basic idea is as follows:
 1. Disable the music on the Rust side for web builds using the `cfg` directives. All music-related code should be marked with `#[cfg(not(feature = "web"))]` so that it doesn't run on web.
 2. Add a JavaScript code to the game's web page to start the music using the Web Audio API.
