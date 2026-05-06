@@ -15,6 +15,7 @@ header:
 toc: true
 sidebar:
   nav: "ceng469"
+author_profile: false
 ---
 
 This post will describe how I completed the second assignment of CENG 469 Computer Graphics 2 course.

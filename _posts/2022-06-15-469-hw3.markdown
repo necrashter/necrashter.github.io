@@ -13,6 +13,7 @@ header:
 toc: true
 sidebar:
   nav: "ceng469"
+author_profile: false
 ---
 
 In this post, I will explain how I implemented a terrain using Perlin noise and geometry shaders for the third assignment of CENG 469 course.

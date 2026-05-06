@@ -8,6 +8,7 @@ toc: true
 header:
   image: "/assets/bg/bevy-jam-sim.png"
   full_image: false
+author_profile: false
 ---
 
 Last month, I've participated in [Bevy Jam 4](https://itch.io/jam/bevy-jam-4) with [Pyrious](https://pyrious.itch.io/), someone I met in Bevy's Discord server.

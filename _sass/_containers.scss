@@ -41,6 +41,20 @@
 	}
 }
 
+.section__subtitle {
+  margin: 1.414em 0 0.5em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 1.4em;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid $border-color;
+
+  .page__content & {
+    color: #fff;
+  }
+}
+
 .audio-container {
   display: flex;
   flex-wrap: wrap;

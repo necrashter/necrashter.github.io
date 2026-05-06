@@ -15,6 +15,7 @@ header:
 toc: true
 sidebar:
   nav: "ceng469"
+author_profile: false
 ---
 
 In this post, I will explain my experience with the first assignment of CENG 469 Computer Graphics 2 course, in which we are asked to implement a waving flag with Bezier surfaces.

@@ -10,6 +10,7 @@ toc: true
 sidebar:
   nav: "ceng469"
 excerpt: "The basics of Vulkan compute shaders are explained in a video."
+author_profile: false
 ---
 
 For the final project of CENG 469 Advanced Graphics Course, I wanted to do something that involves compute shaders.

@@ -13,6 +13,7 @@ header:
 sidebar:
   nav: "ceng469"
 excerpt: "Demonstration of my final project for CENG 469 alongside some technical information."
+author_profile: false
 ---
 
 **Update 2022-11-01:**
