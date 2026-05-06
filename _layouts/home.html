@@ -31,6 +31,7 @@ layout: default
       </article>
     {% endif %}
 
+  {% if page.show_posts %}
   <div class="archive">
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Blog Posts" }}</h3>
@@ -51,5 +52,6 @@ layout: default
 {% include paginator.html %}
 
   </div>
+  {% endif %}
 </div>
 

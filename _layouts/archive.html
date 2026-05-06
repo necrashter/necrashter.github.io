@@ -21,6 +21,13 @@ layout: default
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
+
+    <div style="margin-bottom: 1em;">
+      <a href="/year-archive/" class="btn {% if page.url == '/year-archive/' %}btn--inverse{% else %}btn--primary{% endif %} btn--small">By Year</a>
+      <a href="/categories/" class="btn {% if page.url == '/categories/' %}btn--inverse{% else %}btn--primary{% endif %} btn--small">By Category</a>
+      <a href="/tags/" class="btn {% if page.url == '/tags/' %}btn--inverse{% else %}btn--primary{% endif %} btn--small">By Tag</a>
+    </div>
+
     {{ content }}
   </div>
 </div>
